@@ -1,20 +1,63 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 body {
-    z-index: 0;
-    background-position: center;
-    background-attachment: fixed;
+	z-index: 0;
+	background-position: center;
+	background-attachment: fixed;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	background-color: rgba(250, 250, 250, 0.4);
 }
 #banner {
-    padding-top: 10vmin;
-    text-align: center;
-    opacity: 0.6;
-    font-size: 1.5vmax;
-    line-height: 1.6vmax;
-    letter-spacing: -0.5px;
-    font-family: "Courier New", Monospace;
-    white-space: pre;
+	padding-top: 10vmin;
+	text-align: center;
+	opacity: 0.8;
+	/* this font-size/line-height works well for Fraktur */
+	font-size: 1vmax;
+	line-height: 0.8vmax;
+	letter-spacing: -0.5px;
+	font-family: "Courier New", Monospace;
+	white-space: pre;
+	font-weight: bold;
+}
+
+.fa {
+	font-size: 1.6vmax;
+}
+
+a i {
+	vertical-align: sub;
+}
+
+#links {
+	padding-top: 3vmin;
+	font-size: 1.1vmax;
+}
+
+.grid {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 10px;
+	margin: auto;
+	text-align: center;
+	margin: auto;
+	width: -moz-fit-content; /* For Mozilla firefox*/
+	width: -webkit-fit-content; /* For Google Chrome */
+	width: fit-content;
+}
+
+#links .grid-item {
+	background-color: rgba(200, 200, 200, 0.3);
+	padding: 10px;
+	text-align: center;
 }
