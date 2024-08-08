@@ -188,4 +188,4 @@ function handleConfig(config) {
 	createLinks(document.getElementById("links"), config.links);
 }
 
-loadConfig("config.yml");
+loadConfig("config.yaml");
