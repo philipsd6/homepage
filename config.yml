@@ -1,0 +1,32 @@
+title: Outpost
+title_font: ANSI Shadow
+
+background: trianglify
+#background: geopattern
+
+# External Links
+links:
+  - name: GitHub
+    icon: fa-github
+    url: https://github.com/philipsd6
+
+services:
+  - name: Calibre-Web
+    logo:
+    # or icon: fa-...
+    url:
+  - name: Calibre-Web (JAB)
+    logo:
+    url:
+  - name: LazyLibrarian
+    logo:
+    url:
+  - name: BitWarden
+    logo:
+    url:
+  - name: WebHook
+    logo:
+    url:
+  - name: The Lounge
+    logo:
+    url:

@@ -1,71 +1,21 @@
 <html lang="en">
   <head>
-    <title>Outpost</title>
+    <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta charset="UTF-8">
-    <style type="text/css">
-      <!--
-      html, body {
-          height: 100%;
-          width: 100%;
-          margin: 0;
-      }
-      body {
-          z-index: 1;
-          background-position: center;
-          background-attachment: fixed;
-      }
-      #banner {
-          text-align: center;
-      }
-      #banner pre {
-          display: inline-block;
-          font-size: 2vmin;
-          font-family: "Courier New", Monospace;
-          white-space: pre;
-      }
-      -->
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
   </head>
   <body>
-    <!-- http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Outpost -->
-    <div id="banner">
-      <pre>
- ██████╗ ██╗   ██╗████████╗██████╗  ██████╗ ███████╗████████╗
-██╔═══██╗██║   ██║╚══██╔══╝██╔══██╗██╔═══██╗██╔════╝╚══██╔══╝
-██║   ██║██║   ██║   ██║   ██████╔╝██║   ██║███████╗   ██║   
-██║   ██║██║   ██║   ██║   ██╔═══╝ ██║   ██║╚════██║   ██║   
-╚██████╔╝╚██████╔╝   ██║   ██║     ╚██████╔╝███████║   ██║   
- ╚═════╝  ╚═════╝    ╚═╝   ╚═╝      ╚═════╝ ╚══════╝   ╚═╝   
-      </pre>
+    <div id="wrapper">
+      <div id="banner"><!--config: title (via js-figlet --></div>
+      <div id="links"><!-- config: links --></div>
+      <div id="services"><!-- config: services --></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
-    <script>
-      function updateBackground(target) {
-	var dimensions = target.getClientRects()[0];
-	var pattern = Trianglify({
-	  width: dimensions.width,
-	  height: dimensions.height,
-          cell_size: 50,
-          variance: 0.8,
-	});
-
-	target.style['background-image'] = 'url(' + pattern.png() + ')';
-	target.style['background-size'] = 'cover';
-	target.style['-webkit-background-size'] = 'cover';
-	target.style['-moz-background-size'] = 'cover';
-	target.style['-o-background-size'] = 'cover';
-      }
-
-      var resizeTimer;
-      window.addEventListener("resize", function () {
-	clearTimeout(resizeTimer);
-	resizeTimer = setTimeout(function() {
-	  updateBackground(document.body);
-	}, 400);
-      })
-
-      updateBackground(document.body);
-    </script>
+    <script type="text/javascript" src="js/js-yaml.min.js"></script>
+    <script type="text/javascript" src="js/fetch.min.js"></script>
+    <script type="text/javascript" src="js/figlet.js"></script>
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
+    <!-- This is the custom javascript for the homepage -->
+    <script src="js/homepage.js"></script>
   </body>
 </html>
