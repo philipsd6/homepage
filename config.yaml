@@ -1,27 +1,18 @@
 ---
-title: Homepage
+title: DougNet
 title_font: Fraktur
 
 # can be geopattern or trianglify
-background: trianglify
+background: geopattern
 
 # Links Bar
 links:
-  - name: joe
+  - name: philipsd6
     icon: fa-brands fa-github
-    url: https://github.com/joe
-  - name: joesothername
+    url: https://github.com/philipsd6
+  - name: philipsd6
     icon: fa-brands fa-instagram
-    url: https://www.instagram.com/joesothername
+    url: https://www.instagram.com/philipsd6
 
 # Service Cards
-services:
-  - name: Service 1
-    logo: https://loremflickr.com/320/240/movie
-    url: https://example.com
-  - name: Another Service
-    logo: https://loremflickr.com/320/240/books
-    url: https://example.com
-  - name: Anything Really
-    logo: https://loremflickr.com/320/240/television
-    url: https://example.com
+services: []
